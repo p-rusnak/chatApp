@@ -38,7 +38,7 @@ export default class Chat extends React.Component {
     var self = this;
     var i = 0;
     var messages = self.state.messages.map(function(msg){
-      return <li key={i++}><strong>{msg.user}</strong> <span> {msg.body}</span> </li>;
+      return <li key={i++}><span>{msg.user}</span>  {msg.body}</li>;
     });
 
     return(
@@ -46,8 +46,8 @@ export default class Chat extends React.Component {
         <ul>
           {messages}
         </ul>
-        <input id="message" type='text' /><button onClick={() => self.submitMessage()}> aa </button><br/>
-        <input id="user" type='text' placeholder='username' /><button onClick={() => self.pickUser()}>User</button>
+        <input id="message" type='text' placeholder="Message" /><button onClick={() => self.submitMessage()}> Send </button><br/>
+        <input id="user" type='text' placeholder='Username' /><button onClick={() => self.pickUser()}>Lock username</button>
       </div>
     );
   }
