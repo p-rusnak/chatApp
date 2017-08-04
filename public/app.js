@@ -15,15 +15,3 @@ ReactDOM.render(
   <Chat />
 , app);
 
-
-// <Router history={hashHistory}>
-//   <div>
-//     <ul>
-//       <li><Link to="/">Home</Link></li>
-//       <li><Link to="typer/Welcome">typer</Link></li>
-//     </ul>
-//
-//     <Route exact path="/" component={Home} />
-//     <Route path="/typer/:title" component={Layout} />
-//   </div>
-// </Router>
